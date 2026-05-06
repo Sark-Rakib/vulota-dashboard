@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router";
 import { BarChart3, Home, Users, FileText, Shield } from "lucide-react";
+import { AiOutlineRollback } from "react-icons/ai";
 
 const Sidebar = ({ open }) => {
   const location = useLocation();
@@ -10,6 +11,7 @@ const Sidebar = ({ open }) => {
     { path: "/users", label: "Users", icon: Users },
     { path: "/reports", label: "Reports", icon: FileText },
     { path: "/security", label: "Security", icon: Shield },
+    { path: "/", label: "Back to Home", icon: AiOutlineRollback },
   ];
 
   return (
